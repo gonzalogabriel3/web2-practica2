@@ -78,7 +78,7 @@
     public function validarFecha($campo){
         $fecha=$this->getValor('fecha');
         
-        $fechaActual=date("d-m-Y");
+        //$fechaActual=date("d-m-Y");
         
         if(empty($fecha)){
             $this->setError('fecha', 'Debe ingresar fecha');

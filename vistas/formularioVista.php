@@ -41,7 +41,7 @@
     <?php $tiene_error=$miFormulario->tieneError('fecha')? "has-error" : "";?>
     <div class="form-group">
         <label class="control-label" for="fec">Fecha</label>
-        <input type="date" class="form-control" name="fecha" id="fec"/>
+        <input type="date" class="form-control" name="fecha" id="fec" value="<?php echo $miFormulario->getValor('fecha'); ?>"/>
         <span class="help-block" style="color:red"><?php echo $miFormulario->getError('fecha');?></span>
     </div> 
   
