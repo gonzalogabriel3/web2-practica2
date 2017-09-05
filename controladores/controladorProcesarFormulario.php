@@ -16,7 +16,7 @@
         /*Si se proceso correctamente el formulario*/
         if ($miFormulario->procesarFormulario($_POST)){
             //redirecciono//
-            header("Location:../vistas/ok_vista.php");
+            header("Location: ../vistas/ok_vista.php");
             die();
         }
     }
