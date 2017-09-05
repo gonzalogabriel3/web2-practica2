@@ -13,6 +13,6 @@
 <body class="container" style="background-color: #53F59C">
         
 <header style="background-color: #28B5C6">
-    <center><b><h2 style="display: inline-block;">Trabajo practico</h2></b></center>
+    <center><b><h2 style="display: inline-block;">Trabajo practico II</h2></b></center>
 </header>
     <br>        
