@@ -9,7 +9,8 @@
      public $nacionalidades;
         
      public function __construct() {
-            $this->nacionalidades=[ 1 => "Argentino",2 => "Chileno",3 => "Otro"];
+            $this->nacionalidades=[ 1 => "Argentino",2 => "Chileno",3 => "Peruano",4 => "Uruguayo",5 =>"Paraguayo",
+                6 => "Venezolano",7 => "Ecuatoriano",8 => "Otro"];
      }
 
     /*Funcion que copia todos los valores ingresados en el formulario en el atributo
@@ -68,7 +69,9 @@
     public function validarNacionalidad($campo){
         $nacionalidad=$this->getValor('nacionalidad');
         
-        if($nacionalidad!='Argentino' && $nacionalidad!='Chileno' && $nacionalidad!='Otro'){
+        if($nacionalidad!='Argentino' && $nacionalidad!='Chileno' && $nacionalidad!='Otro'
+                && $nacionalidad!='Paraguayo' && $nacionalidad!='Uruguayo' && $nacionalidad!='Ecuatoriano'
+                && $nacionalidad!='Venezolano' && $nacionalidad!='Peruano'){
             $this->setError('nacionalidad', 'Debe seleccionar una nacionalidad valida');
             return;
         }
