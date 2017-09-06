@@ -146,9 +146,15 @@
     public function  procesarFormulario($arreglo_datos){
         $this->rellenarCon($arreglo_datos);
         $this->validar();
-        return empty($this->errores);
+        
+        /*Si se valido todo ok,se retorna verdadero*/
+        if(empty($this->errores)){
+            return true;
+        }    
+        
+        return;
     }    
     
-}    
+}
   
 
