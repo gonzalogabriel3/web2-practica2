@@ -28,7 +28,7 @@
 
     /*Funcion que retorna el mensaje de error del campo solicitado*/
     public function getError($campo) {
-        return $this->tieneError($campo) ? $this->errores[$campo] : null;
+        return $this->tieneError($campo) ? $this->errores[$campo] : "";
     }
 
     /*Funcion que indica si un option de un select fue seleccionado o no*/
@@ -135,16 +135,18 @@
     
     
     public function validar(){
+        
         $this->validarApellido('apellido');
         $this->validarNombre('nombre');
         $this->validarNacionalidad('nacionalidad');
         $this->validarFecha('fecha');
+        
     }
     
     public function  procesarFormulario($arreglo_datos){
         $this->rellenarCon($arreglo_datos);
         $this->validar();
-        return;
+        return empty($this->errores);
     }    
     
 }    

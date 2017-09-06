@@ -2,10 +2,11 @@
 
 <center><h2 style="color: green"><b>FORMULARIO</b></h2></center>
 
-<form method="post" action="../controladores/controladorProcesarFormulario.php">
+<form method="post" action="">
     
     <?php 
-        /*Si mi formulario contiene errores los notificos*/
+        /*Si mi formulario contiene errores los notificos
+        */
         if($miFormulario->tieneErrores()==true){
         
         
